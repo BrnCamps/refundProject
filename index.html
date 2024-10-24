@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="styles.css" />
 
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
     <title>Refund</title>
   </head>
 
@@ -25,7 +27,7 @@
         <form>
           <h1>Solicitação de reembolso</h1>
           <p>
-            Informe os dados da despesa para solicitar reembolso. A despesa será
+            Informe os dados da despesa e recibo de pagamento para solicitar reembolso. A despesa será
             analisada e reembolsada em até 30 dias.
           </p>
 
@@ -53,7 +55,7 @@
                 type="text"
                 name="amount"
                 id="amount"
-                placeholder="0,00"
+                placeholder="R$ 0,00"
                 required
               />
             </fieldset>
@@ -66,13 +68,14 @@
           <header>
             <p>
               Minhas solicitações <i>&bullet;</i>
-              <span>0 despesas</span>
+              <span>0 despesa</span>
             </p>
             <h2><small>R$</small>0,00</h2>
           </header>
 
           <ul>
-            <li class="expense">
+            <!-- Exemplo da estrutura HTML de um item de despesa.  -->
+            <!-- <li class="expense">
               <img src="./img/food.svg" alt="Ícone de tipo da despesa" />
 
               <div class="expense-info">
@@ -81,12 +84,17 @@
               </div>
 
               <span class="expense-amount"><small>R$</small>1.420,57</span>
-
-              <img src="./img/remove.svg" alt="remover" class="remove-icon" />
-            </li>
+              
+              <label for="receipt-icon" class="receipt-icon">
+                <box-icon name='receipt'></box-icon>
+              <input alt="incluir comprovante" class="receipt-icon" type="file" id="receipt-icon"/>
+              </label>
+              <img src="./img/remove.svg" alt="remover" class="remove-icon" />             
+            </li> -->
           </ul>
         </aside>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

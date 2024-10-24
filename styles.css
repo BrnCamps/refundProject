@@ -218,7 +218,7 @@ aside ul {
   height: 38px;
 }
 
-.expense img:first-child {
+.expense img:first-child:not(.receipt-icon) {
   width: 2rem;
   height: 2rem;
 
@@ -255,7 +255,7 @@ aside ul {
 }
 
 .remove-icon {
-  height: 1rem;
+  height: 1.2rem;
   margin-left: 0.5rem;
 
   cursor: pointer;
@@ -264,6 +264,22 @@ aside ul {
 
 .remove-icon:hover {
   opacity: 0.7;
+}
+
+.receipt-icon {
+  height: 1.2rem;
+  margin-left: 0.5rem;
+
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.receipt-icon:hover {
+  opacity: 0.7;
+}
+
+input[type="file"] {
+  display: none;
 }
 
 @media (min-width: 1100px) {
